@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*background-image: url("images/many faces.png");
+    background-repeat:no-repeat;*/
+    overflow: hidden;
+    background-color: #ffcccc;
+}
+
+.bigContainer {
+    position:relative;
+}
+
+.full {
+    position:relative;
+    width: 50%;
+    height: 100%;
+    z-index: 9999999999;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.small {
+    z-index: -1;
+}
+
+/*.hidden {
+    display: none;
+}*/
