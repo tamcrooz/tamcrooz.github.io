@@ -72,6 +72,10 @@ App.prototype = {
     }
 };
 
+document.body.addEventListener('touchstart', function(e){ 
+    e.preventDefault(); 
+});
+
 var app = new App();
 
 app.run();
