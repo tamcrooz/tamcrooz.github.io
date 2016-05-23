@@ -37,8 +37,8 @@ App.prototype = {
 
         document.body.appendChild(face.image); 
         $(face.image).animate({
-            left: '+=2500px',
-            top: '+=2500px'
+            left: '+=' + window.innerWidth * 1.5 + 'px',
+            top: '+=' + window.innerWidth * 1.5 + 'px',
         }, 20000, "linear", function() {
             face.image.remove();
         });
@@ -53,8 +53,8 @@ App.prototype = {
 
         document.body.appendChild(face.image); 
         $(face.image).animate({
-            left: '+=2500px',
-            top: '+=2500px'
+            left: '+=' + window.innerWidth * 1.5 + 'px',
+            top: '+=' + window.innerWidth * 1.5 + 'px',
         }, 20000, "linear", function() {
             face.image.remove();
         });
