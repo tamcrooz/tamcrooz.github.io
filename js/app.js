@@ -15,6 +15,17 @@ function App() {
 App.prototype = {
         
     run: function() {
+        
+        var audio = new Audio('sounds/laugh2.mp3');
+        var audio2 = new Audio('sounds/laugh2.mp3');
+        audio.loop = true;
+        audio.play();
+
+        setInterval(function(){ 
+            audio.loop = true;
+            audio2.play();
+        }, 1000);
+        
         this.drawFaces();
     },
     
@@ -61,21 +72,9 @@ App.prototype = {
     }
 };
 
-// need to destroy faces an dshit
-
 var app = new App();
 
 app.run();
-
-var audio = new Audio('sounds/laugh2.mp3');
-var audio2 = new Audio('sounds/laugh2.mp3');
-audio.loop = true;
-audio.play();
-
-setInterval(function(){ 
-    audio.loop = true;
-    audio2.play();
-}, 1000);
 
 $(document).on("mouseenter", "#tam", function() {
     $(this).attr("src", "images/laughingface1.png");
